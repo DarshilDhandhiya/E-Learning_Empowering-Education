@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom"
 import Head from "./Head"
 import "./header.css"
+import { Outlet } from "react-router-dom"
 
 const Header = () => {
   const [click, setClick] = useState(false)
@@ -51,6 +52,7 @@ const Header = () => {
           </button>
         </nav>
       </header>
+      <Outlet/>
     </>
   )
 }
