@@ -1,15 +1,11 @@
-import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-import Header from "../Common/header/Header"
+import React from 'react'
 
-function App() {
-    return (
-      <>
-        <Router>
-          <Header />
-        </Router>
-      </>
-    );
-  }
-  
-  export default App;
+const Home = () => {
+  return (
+    <div>
+      <h1 style={{color:'#ff34f4'}}>Home</h1>
+    </div>
+  )
+}
+
+export default Home
