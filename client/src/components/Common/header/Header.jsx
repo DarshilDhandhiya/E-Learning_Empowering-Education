@@ -18,6 +18,11 @@ const Header = () => {
             <NavLink to='/whatsapp'>Whatsapp_Me</NavLink>
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/contact'>Contact</NavLink>
+            <div className='start'>
+              <NavLink to='../../User/Login.js'>
+                <div className='button'>GET START</div>
+              </NavLink>
+            </div>
           </NavMenu>
         </Nav>
     </>

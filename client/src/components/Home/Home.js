@@ -1,10 +1,11 @@
-import React from 'react'
+import React from "react"
+import Hero from "./hero/Hero"
 
 const Home = () => {
   return (
-    <div>
-      <h1 style={{color:'#ff34f4'}}>Home</h1>
-    </div>
+    <>
+      <Hero />
+    </>
   )
 }
 
