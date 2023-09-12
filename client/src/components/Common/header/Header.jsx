@@ -9,15 +9,15 @@ const Header = () => {
         <Nav className='flexSB'>
         <Bars />
           <NavMenu>
-            <NavLink to='/Home' activeStyle>Home</NavLink>
-            <NavLink to='/Courses' activeStyle>Courses</NavLink>
-            <NavLink to='/OnlineExam' activeStyle>OnlineExam</NavLink>
-            <NavLink to='/Admission' activeStyle>Admission</NavLink>
-            <NavLink to='/Dashboard' activeStyle>Dashboard</NavLink>
-            <NavLink to='/Media' activeStyle>Media</NavLink>
-            <NavLink to='/Whatsapp_Me' activeStyle>Whatsapp_Me</NavLink>
-            <NavLink to='/About' activeStyle>About</NavLink>
-            <NavLink to='/Contact' activeStyle>Contact</NavLink>
+            <NavLink to='/'>Home</NavLink>
+            <NavLink to='/courses'>Courses</NavLink>
+            <NavLink to='/onlineExam'>OnlineExam</NavLink>
+            <NavLink to='/admission'>Admission</NavLink>
+            <NavLink to='/dashboard'>Dashboard</NavLink>
+            <NavLink to='/media'>Media</NavLink>
+            <NavLink to='/whatsapp'>Whatsapp_Me</NavLink>
+            <NavLink to='/about'>About</NavLink>
+            <NavLink to='/contact'>Contact</NavLink>
           </NavMenu>
         </Nav>
     </>
