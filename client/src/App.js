@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter , Routes, Route } from 'react-router-dom';
 import "./App.css"
 import Header from "./components/Common/header/Header"
 import Footer from "./components/Common/footer/Footer";
@@ -9,28 +9,28 @@ import OnlineExam from "./components/OnlineExam/OnlineExam"
 import Admission from "./components/Admission/Admission"
 import Dashboard from "./components/Dashboard/Dashboard"
 import Media from "./components/Media/Media"
-import Whatsapp from "./components/Whatsapp_Me/Whatsapp_Me"
 import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
+import Whatsapp_Me from './components/Whatsapp_Me/Whatsapp_Me';
 
 function App() {
   return (
     <>
-      <Router>
+      <BrowserRouter>
         <Header />
           <Routes>
-            <Route path='/' exact component={Home} />
-            <Route path='/courses' exact component={Courses} />
-            <Route path='/onlineExam' exact component={OnlineExam} />
-            <Route path='/admission' exact component={Admission} />
-            <Route path='/dashboard' exact component={Dashboard} />
-            <Route path='/media' exact component={Media} />
-            <Route path='/whatsapp' exact component={Whatsapp} />
-            <Route path='/about' exact component={About} />
-            <Route path='/contact' exact component={Contact} />
+            <Route path='/'element={<Home/>} />
+            <Route path='/courses' element={<Courses/>} />
+            <Route path='/onlineExam' element={<OnlineExam/>} />
+            <Route path='/admission' element={<Admission/>} />
+            <Route path='/dashboard' element={<Dashboard/>} />
+            <Route path='/media' element={<Media/>} />
+            <Route path='/whatsapp' element={<Whatsapp_Me/>} />
+            <Route path='/about' element={<About/>} />
+            <Route path='/contact' element={<Contact/>} />
           </Routes>
-
-      </Router>
+          <Footer/>
+      </BrowserRouter>
     </>
   );
 }
