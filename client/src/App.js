@@ -12,6 +12,7 @@ import Media from "./components/Media/Media"
 import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
 import Whatsapp_Me from './components/Whatsapp_Me/Whatsapp_Me';
+import Login from "./components/User/Login"
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
             <Route path='/whatsapp' element={<Whatsapp_Me/>} />
             <Route path='/about' element={<About/>} />
             <Route path='/contact' element={<Contact/>} />
+            <Route path='/login' element={<Login/>} />
           </Routes>
           <Footer/>
       </BrowserRouter>

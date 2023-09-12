@@ -1,9 +1,10 @@
 import React from 'react'
+import Back from "../Common/back/Back"
 
 const Login = () => {
   return (
     <div>
-      <h1>Login</h1>
+      <Back title='Login' />
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
+import Back from "../Common/back/Back"
 
 const Contact = () => {
   return (
     <div>
-      <h1>Contact</h1>
+      <Back title='Contact' />
     </div>
   )
 }

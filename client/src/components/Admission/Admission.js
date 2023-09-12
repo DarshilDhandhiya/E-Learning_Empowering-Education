@@ -1,9 +1,10 @@
 import React from 'react'
+import Back from "../Common/back/Back"
 
 const Admission = () => {
   return (
     <div>
-      <h1>Admission</h1>
+      <Back title='Admission' />
     </div>
   )
 }

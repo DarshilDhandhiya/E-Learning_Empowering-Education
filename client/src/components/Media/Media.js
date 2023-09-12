@@ -1,9 +1,10 @@
 import React from 'react'
+import Back from "../Common/back/Back"
 
 const Media = () => {
   return (
     <div>
-       <h1>Media</h1>
+       <Back title='Media' />
     </div>
   )
 }

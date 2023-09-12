@@ -1,9 +1,10 @@
 import React from 'react'
+import Back from "../Common/back/Back"
 
 const OnlineExam = () => {
   return (
     <div>
-       <h1>Online Exam</h1>
+      <Back title='Online Exam' />
     </div>
   )
 }

@@ -1,9 +1,10 @@
 import React from 'react'
+import Back from "../Common/back/Back"
 
 const Dashboard = () => {
   return (
     <div>
-       <h1>Dashboard</h1>
+       <Back title='Dashboard' />
     </div>
   )
 }

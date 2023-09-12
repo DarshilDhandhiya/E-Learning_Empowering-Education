@@ -1,9 +1,10 @@
 import React from 'react'
+import Back from "../Common/back/Back"
 
 const Courses = () => {
   return (
     <div>
-       <h1>Courses</h1>
+      <Back title='Courses' />
     </div>
   )
 }
