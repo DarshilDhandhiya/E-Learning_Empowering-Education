@@ -2,6 +2,7 @@ import React from "react"
 import Hero from "./hero/Hero"
 import AboutCard from "../About/AboutCard"
 import CourseCard from "../Courses/CourseCard"
+import Testimonal from "./testimonal/Testimonal"
 
 const Home = () => {
   return (
@@ -9,6 +10,7 @@ const Home = () => {
       <Hero />
       <AboutCard />
       <CourseCard />
+      <Testimonal />
     </>
   )
 }
