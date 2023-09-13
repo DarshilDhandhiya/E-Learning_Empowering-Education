@@ -1,47 +1,5 @@
-export const team = [
-  {
-    cover: "./images/team/t1.webp",
-    name: "Ph.D Adrian Molises",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t2.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t3.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t4.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t5.webp",
-    name: "Ph.D Adrian Molises",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t6.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t7.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t8.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-]
-
-
+import React, { useRef, useState } from "react"
+import Heading from "../Common/heading/Heading"
 
 export const faq = [
   {
@@ -69,3 +27,39 @@ export const faq = [
     desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
 ]
+
+const Faq = () => {
+  const [click, setClick] = useState(false)
+
+  const toggle = (index) => {
+    if (click === index) {
+      return setClick(null)
+    }
+    setClick(index)
+  }
+
+  return (
+    <>
+      <Heading subtitle='FAQS' title='Frequesntly Ask Question' />
+      <section className='faq'>
+        <div className='container'>
+          {faq.map((val, index) => (
+            <div className='box'>
+              <button className='accordion' onClick={() => toggle(index)} key={index}>
+                <h2>{val.title}</h2>
+                <span>{click === index ? <i className='fa fa-chevron-down'></i> : <i className='fa fa-chevron-right'></i>}</span>
+              </button>
+              {click === index ? (
+                <div className='text'>
+                  <p>{val.desc}</p>
+                </div>
+              ) : null}
+            </div>
+          ))}
+        </div>
+      </section>
+    </>
+  )
+}
+
+export default Faq

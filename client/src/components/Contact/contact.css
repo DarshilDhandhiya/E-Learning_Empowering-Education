@@ -1,0 +1,68 @@
+.contacts iframe {
+  width: 100%;
+  height: 800px; /* You can set a fixed height for the map */
+  border: none;
+}
+
+.contacts .right {
+  padding: 20px; /* Reduce padding on smaller screens */
+}
+
+.contacts h1 {
+  font-size: 24px; /* Reduce font size for smaller screens */
+  font-weight: 400;
+}
+
+.contacts p {
+  color: grey;
+  font-size: 14px; /* Reduce font size for smaller screens */
+}
+
+.contacts .items {
+  margin: 20px 0; /* Reduce margin on smaller screens */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Use grid for better responsiveness */
+  gap: 20px;
+}
+
+.contacts .box p {
+  font-size: 14px; /* Reduce font size for smaller screens */
+  margin-top: 5px; /* Reduce margin on smaller screens */
+}
+
+.contacts textarea,
+.contacts input {
+  width: 100%;
+  padding: 10px; /* Reduce padding on smaller screens */
+  margin-bottom: 10px; /* Reduce margin on smaller screens */
+  outline: none;
+  border: 1px solid grey;
+  font-size: 14px; /* Reduce font size for smaller screens */
+}
+
+form .flexSB input:nth-child(1) {
+  margin-right: 5px; /* Reduce margin on smaller screens */
+}
+
+.contacts h3 {
+  margin-top: 10px; /* Reduce margin on smaller screens */
+  font-weight: 500;
+  font-size: 18px; /* Increase font size for smaller screens */
+  margin-bottom: 5px; /* Reduce margin on smaller screens */
+}
+
+.contacts span {
+  color: #1eb2a6;
+  font-weight: 600;
+  font-size: 14px; /* Reduce font size for smaller screens */
+  word-spacing: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts .container {
+    flex-direction: column;
+  }
+  .contacts .row {
+    width: 100%;
+  }
+}
