@@ -1,14 +1,14 @@
 import React from "react"
 import Hero from "./hero/Hero"
 import AboutCard from "../About/AboutCard"
-import Courses from "../Courses/Courses"
+import CourseCard from "../Courses/CourseCard"
 
 const Home = () => {
   return (
     <>
       <Hero />
       <AboutCard />
-      <Courses />
+      <CourseCard />
     </>
   )
 }
