@@ -1,0 +1,14 @@
+Standard1.css
+h1 {
+  padding-top: 60%;
+}
+
+.video-card {
+  padding-top: 5%;
+  padding-bottom: 3%;
+  width: 40%;
+  height: 450px; /* Fixed height of 450px */
+  margin: auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
