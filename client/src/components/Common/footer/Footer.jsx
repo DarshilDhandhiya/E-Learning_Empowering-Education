@@ -101,23 +101,23 @@ const Footer = () => {
           </div>
           
           <div className='box link'>
-            <h3>Explore</h3>
-            <ul>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/services">Services</a></li>
-              <li><a href="/courses">Courses</a></li>
-              <li><a href="/contact">Contact us</a></li>
-            </ul>
-          </div>
-          <div className='box link'>
-            <h3>Quick Links</h3>
-            <ul>
-              <li><a href="/contact">Contact Us</a></li>
-              <li><a href="/">Pricing</a></li>
-              <li><a href="/">Privacy</a></li>
-              <li><a href="/">Feedbacks</a></li>   
-            </ul>
-          </div>
+        <h3>Explore</h3>
+        <ul>
+          <li><a className='link-without-color' href="/about">About Us</a></li>
+          <li><a className='link-without-color' href="/services">Services</a></li>
+          <li><a className='link-without-color' href="/courses">Courses</a></li>
+          <li><a className='link-without-color' href="/contact">Contact us</a></li>
+        </ul>
+      </div>
+      <div className='box link'>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a className='link-without-color' href="/contact">Contact Us</a></li>
+          <li><a className='link-without-color' href="/">Pricing</a></li>
+          <li><a className='link-without-color' href="/">Privacy</a></li>
+          <li><a className='link-without-color' href="/">Feedbacks</a></li>
+        </ul>
+      </div>
           
           <div className='box'>
             <h3>Recent Post</h3>
@@ -155,11 +155,11 @@ const Footer = () => {
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
-                +91 9408596107
+                <a className='link-without-color' href="tel:+919408596107">+91 9408596107</a>
               </li>
               <li>
                 <i className='fa fa-paper-plane'></i>
-                info@easyeducationhimatnagar.com
+                <a className='link-without-color' href="mailto:info@easyeducationhimatnagar.com">info@easyeducationhimatnagar.com</a>
               </li>
             </ul>
           </div>

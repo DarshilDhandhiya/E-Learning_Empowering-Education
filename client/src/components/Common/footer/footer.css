@@ -110,3 +110,8 @@ footer .last i {
 .legal i {
   color: #1eb2a6;
 }
+
+.link-without-color {
+  color: inherit; /* or color: black; or any color you prefer */
+  text-decoration: none; /* Removes the underline */
+}
