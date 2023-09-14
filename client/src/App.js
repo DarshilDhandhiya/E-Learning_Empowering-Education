@@ -11,7 +11,6 @@ import Dashboard from "./components/Dashboard/Dashboard"
 import Media from "./components/Media/Media"
 import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
-import Whatsapp_Me from './components/Whatsapp_Me/Whatsapp_Me';
 import Login from "./components/User/Login"
 import STD1 from "./components/Courses/Standard1/Standard1"
 import STD2 from "./components/Courses/Standard2/Standard2"
@@ -39,7 +38,6 @@ function App() {
             <Route path='/admission' element={<Admission/>} />
             <Route path='/dashboard' element={<Dashboard/>} />
             <Route path='/media' element={<Media/>} />
-            <Route path='/whatsapp' element={<Whatsapp_Me/>} />
             <Route path='/about' element={<About/>} />
             <Route path='/contact' element={<Contact/>} />
             <Route path='/login' element={<Login/>} />

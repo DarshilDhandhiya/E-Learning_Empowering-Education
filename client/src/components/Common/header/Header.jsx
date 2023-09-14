@@ -15,7 +15,6 @@ const Header = () => {
             <NavLink to='/admission'>Admission</NavLink>
             <NavLink to='/dashboard'>Dashboard</NavLink>
             <NavLink to='/media'>Media</NavLink>
-            <NavLink to='/whatsapp'>Whatsapp</NavLink>
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/contact'>Contact</NavLink>
             <div className='start'>

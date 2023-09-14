@@ -103,19 +103,19 @@ const Footer = () => {
           <div className='box link'>
             <h3>Explore</h3>
             <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Contact us</li>
+              <li><a href="/about">About Us</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/courses">Courses</a></li>
+              <li><a href="/contact">Contact us</a></li>
             </ul>
           </div>
           <div className='box link'>
             <h3>Quick Links</h3>
             <ul>
-              <li>Contact Us</li>
-              <li>Pricing</li>
-              <li>Privacy</li>
-              <li>Feedbacks</li>
+              <li><a href="/contact">Contact Us</a></li>
+              <li><a href="/">Pricing</a></li>
+              <li><a href="/">Privacy</a></li>
+              <li><a href="/">Feedbacks</a></li>   
             </ul>
           </div>
           
