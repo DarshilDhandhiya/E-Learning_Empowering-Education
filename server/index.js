@@ -1,5 +1,6 @@
 const express = require('express');
 const app = express();
+const cors = require('cors');
 const passport = require('passport');
 const cookieSession = require('cookie-session');
 require('./passport');
@@ -16,6 +17,9 @@ app.get('/', (req, res) => {
 	res.send("<button><a href='/auth'>Login With Google</a></button>")
 });
 
+// Enable CORS
+app.use(cors({ origin: '*' }));
+
 // Auth
 app.get('/auth' , passport.authenticate('google', { scope:
 	[ 'email', 'profile' ]
@@ -29,10 +33,15 @@ app.get( '/auth/callback',
 }));
 
 // Success
-app.get('/auth/callback/success' , (req , res) => {
-	if(!req.user)
-		res.redirect('/auth/callback/failure');
-	res.send("Welcome " + req.user.email);
+app.get('/auth/callback/success', (req, res) => {
+    if (!req.user) {
+        res.redirect('/auth/callback/failure');
+    } else {
+        // Split the email by "@" and take the first part as the first word
+        const email = req.user.email;
+        const firstWord = email.split('@')[0];
+        res.send("Welcome " + firstWord);
+    }
 });
 
 // failure
