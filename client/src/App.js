@@ -12,6 +12,8 @@ import Media from "./components/Media/Media"
 import About from "./components/About/About"
 import Contact from "./components/Contact/Contact"
 import Login from "./components/User/Login"
+import Loginmain from "./components/User/Login/Loginmain"
+import Signupmain from "./components/User/Signup/Signupmain"
 import STD1 from "./components/Courses/Standard1/Standard1"
 import STD2 from "./components/Courses/Standard2/Standard2"
 import STD3 from "./components/Courses/Standard3/Standard3"
@@ -41,6 +43,8 @@ function App() {
             <Route path='/about' element={<About/>} />
             <Route path='/contact' element={<Contact/>} />
             <Route path='/login' element={<Login/>} />
+            <Route path='/loginmain' element={<Loginmain/>} />
+            <Route path='/signupmain' element={<Signupmain/>} />
             <Route path='/std1' element={<STD1/>} />
             <Route path='/std2' element={<STD2/>} />
             <Route path='/std3' element={<STD3/>} />
