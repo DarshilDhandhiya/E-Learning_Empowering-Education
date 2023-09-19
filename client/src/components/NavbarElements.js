@@ -3,28 +3,35 @@ import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const Nav = styled.nav`
-background: #63D471;
-height: 85px;
-display: flex;
-justify-content: space-between;
-padding: 0.2rem calc((100vw - 1000px) / 2);
-z-index: 12;
-/* Third Nav */
-/* justify-content: flex-start; */
+background: rgba(255, 255, 255, 0.2); /* Change the alpha value to make it more or less transparent */
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.2rem calc((100vw - 1000px) / 2);
+  z-index: 12;
+  /* Third Nav */
+  /* justify-content: flex-start; */
 `;
 
 export const NavLink = styled(Link)`
-color: #808080;
-display: flex;
-align-items: center;
-text-decoration: none;
-padding: 0 1rem;
-height: 100%;
-cursor: pointer;
-&.active {
-	color: #000000;
-}
+  color: #808080;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+
+  &:hover {
+    color: #000000; /* Change the color when hovering */
+    /* You can also add additional styles for the hover effect here */
+  }
+
+  &.active {
+    color: #000000;
+  }
 `;
+
 
 export const Bars = styled(FaBars)`
 display: none;
