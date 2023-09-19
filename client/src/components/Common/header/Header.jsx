@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <>
       <Head />
-        <Nav className='flexSB'>
+        <Nav className='flexSB' >
         <Bars />
           <NavMenu>
             <NavLink to='/'>Home</NavLink>
