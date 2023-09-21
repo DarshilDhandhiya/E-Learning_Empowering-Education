@@ -94,8 +94,8 @@ function App() {
             <Route path='/std11' element={user ? <STD11 /> : <Navigate to="/login" />} />
             <Route path='/std12' element={user ? <STD12 /> : <Navigate to="/login" />} />
             <Route path='/login' element={ <Login />} />
-
             <Route path='/dashboard' element={user ? <Dashboard user={user} /> : <Navigate to="/login" />} />
+
           </Routes>
           <Footer/>
       </BrowserRouter>

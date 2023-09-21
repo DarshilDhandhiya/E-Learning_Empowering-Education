@@ -1,3 +1,18 @@
+.centered-card {
+    display: flex;
+    padding-top: 42%;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Make the card fill the entire viewport height */
+  }
+  
+  .DashMain {
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
 
 .btn {
     font-size: 18px;

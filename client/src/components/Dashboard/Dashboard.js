@@ -8,12 +8,14 @@ const Dashboard = (userDetails) => {
 		window.open(`${process.env.REACT_APP_API_URL}/auth/logout`, "_self");
 	};
   return (
-    <div>
-       <Back title='Dashboard' />
-       <h1>Welcome {user.name}</h1>
-       <button className="btn" onClick={logout}>
-						Log Out
-				</button>
+    <div className="centered-card">
+      <Back title="Dashboard" />
+      <div className="DashMain">
+        <h1>Welcome {user.name}</h1>
+        <button className="btn" onClick={logout}>
+          Log Out
+        </button>
+      </div>
     </div>
   )
 }
