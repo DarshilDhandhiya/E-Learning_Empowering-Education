@@ -2,7 +2,19 @@
   background-color: #1eb2a6;
   padding: 50px 0;
   color: #fff;
+  text-align: center; /* Center text horizontally */
+  
 }
+
+.newletter .container {
+  display: flex;
+  justify-content: center; /* Center the inner content horizontally */
+  align-items: flex-start; /* Align content to the top vertically */
+  flex-direction: column; /* Stack child elements vertically */
+  padding-left: 30%;
+}
+
+
 .newletter .right,
 .newletter .left {
   padding-right: 50px;

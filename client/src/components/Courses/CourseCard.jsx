@@ -15,7 +15,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -29,7 +29,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -43,7 +43,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -57,7 +57,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -71,7 +71,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -85,7 +85,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -99,7 +99,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -113,7 +113,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -127,7 +127,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -141,7 +141,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -155,7 +155,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     },
     {
@@ -169,7 +169,7 @@ export const coursesCard = [
           totalTime: "50 lectures (100 hrs)",
         },
       ],
-      priceAll: "$0",
+      priceAll: "\u20B90",
       pricePer: "Free",
     }
   ]

@@ -67,16 +67,14 @@ const Footer = () => {
             <h1>Join Thousand Of Happy Students!</h1>
             <span>Subscribe our newsletter & get latest news and updation!</span>
           </div>
-          <div className='right row'>
-            <input type='text' placeholder='Enter email address' />
-            <i className='fa fa-paper-plane'></i>
-          </div>
         </div>
       </section>
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>Easy Education Himatnagar</h1>
+            <a href='/'>
+              <h1 style={{ color: "Black" }}>Easy Education Himatnagar</h1>
+            </a>
             <span>UNITY | EXCELLENCE | SUCCESS</span>
             <p>“Easy Education: Where Knowledge Meets Simplicity.”</p>
 

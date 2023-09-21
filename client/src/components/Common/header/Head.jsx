@@ -5,10 +5,13 @@ const Head = () => {
     <>
       <section className='head'>
         <div className='container flexSB'>
-          <div className='logo'>
-          <h1>Easy Education Himatnagar</h1>
-            <span>UNITY | EXCELLENCE | SUCCESS</span>
-          </div>
+          
+          <a href='/'>
+            <div className='logo'>
+            <h1 style={{ color: "white" }}>Easy Education Himatnagar</h1>
+              <span style={{ color: "white" }}>UNITY | EXCELLENCE | SUCCESS</span>
+            </div>
+          </a>
 
           <div className='social'>
 

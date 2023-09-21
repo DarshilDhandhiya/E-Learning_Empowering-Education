@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styles from './styles.module.css';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 function Loginmain() {
   const navigate = useNavigate();
@@ -10,15 +10,15 @@ function Loginmain() {
     window.open(`${process.env.REACT_APP_API_URL}/auth/google/callback`, '_self');
   };
 
-  //   const redirectToSignup = () => {
-  //     navigate('../Signup/Signupmain.jsx');
-  //   };
+//   const redirectToSignup = () => {
+//     navigate('../Signup/Signupmain.jsx');
+//   };
 
   return (
     <div className={styles.centerContainer}>
-      <div className={styles.container}>
+      <div className={styles.container} >
         <h1 className={styles.heading}>Log in Form</h1>
-        <div className={styles.form_container}>
+        <div className={styles.form_container} >
           <div className={styles.left}>
             <img className={styles.img} src="./images/login.jpg" alt="login" />
           </div>
@@ -32,15 +32,15 @@ function Loginmain() {
               <img src="./images/google.png" alt="google icon" />
               <span>Sign in with Google</span>
             </button>
-            <Link to="/signupmain">Sign Up
-            </Link>
-            {/* <p className={styles.text}>
-            New Here ? <button onClick={redirectToSignup}>Sign Up</button>
-          </p> */}
+        <Link to="/signupmain">Sign Up
+        </Link>
+        {/* <p className={styles.text}>
+              New Here ? <button onClick={redirectToSignup}>Sign Up</button>
+            </p> */}
           </div>
         </div>
       </div>
-    </div>
+      </div>
   );
 }
 
