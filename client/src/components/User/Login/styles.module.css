@@ -9,7 +9,17 @@
     align-items: center;
     justify-content: center;
 }
-
+.centerContainer {
+    display: flex;
+    padding-bottom: 3%;
+    padding-top: 1%;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+  }
+  
+  /* Existing styles for your container and card go here */
+  
 .heading::after {
     content: "";
     width: 450px;
