@@ -31,42 +31,42 @@ const Contact = () => {
               </div>
               <div className="box">
                 <h4>EMAIL:</h4>
-                <p>info@easyeducationhimatnagar.com</p>
+                <p><a href="mailto:info@easyeducationhimatnagar.com" style={{ color: "Black" }}>info@easyeducationhimatnagar.com</a></p>
               </div>
+
               <div className="box">
-                <h4>PHONE:</h4>
-                <p>9408596107</p>
+                  <h4>PHONE:</h4>
+                  <p><a href="tel:9408596107" style={{ color: "Black" }}>9408596107</a></p>
               </div>
+
             </div>
 
-            <form action="">
+            <form action='https://formsubmit.co/d22it207@charusat.edu.in' method='post'>
               <div className="flexSB">
-                <input type="text" placeholder="Name" />
-                <input type="email" placeholder="Email" />
+                <input type="text" placeholder="Name" name="Name"/>
+                <input type="email" placeholder="Email" name="Email" />
               </div>
-              <input type="text" placeholder="Subject" />
-              <textarea cols="30" rows="10">
-                Hello! Easy Education Himatnagar, 
+              <input type="text" placeholder="Subject" name="Subject" />
+              <textarea cols="30" rows="10" name="Message">
+                Hello! Easy Education Himatnagar,
               </textarea>
               <button className="primary-btn">SEND MESSAGE</button>
             </form>
 
             <h3>Follow us here</h3>
             <span>
-              <a href="https://m.facebook.com/story.php?story_fbid=122340196948376&id=105714251944304&locale2=hi_IN&_rdr">
-                FACEBOOK
-              </a>{" "}
+              <a href="https://m.facebook.com/story.php?story_fbid=122340196948376&id=105714251944304&locale2=hi_IN&_rdr" style={{ color: "Black" }}>FACEBOOK </a>{" "}
               <span style={{ marginRight: "10px" }}></span>
-              <a href="https://www.linkedin.com/in/easy-education-himatnagar-8a8245259/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in">
-                LINKEDIN
-              </a>{" "}
+
+              <a href="https://www.linkedin.com/in/easy-education-himatnagar-8a8245259/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=in" style={{ color: "Black" }}>LINKEDIN</a>{" "}
               <span style={{ marginRight: "10px" }}></span>
-              <a href="https://twitter.com/ezeducation">TWITTER</a>{" "}
+
+              <a href="https://twitter.com/ezeducation" style={{ color: "Black" }}>TWITTER</a>{" "}
               <span style={{ marginRight: "10px" }}></span>
-              <a href="https://www.youtube.com/channel/UC0LiN6hry9BEAWYZZ5byfzg">
-                YOUTUBE
-              </a>
+              
+              <a href="https://www.youtube.com/channel/UC0LiN6hry9BEAWYZZ5byfzg" style={{ color: "Black" }}>YOUTUBE</a>
             </span>
+            
           </div>
         </div>
       </section>
