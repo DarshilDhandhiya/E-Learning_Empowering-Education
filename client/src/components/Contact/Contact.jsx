@@ -46,7 +46,7 @@ const Contact = () => {
               </div>
               <input type="text" placeholder="Subject" />
               <textarea cols="30" rows="10">
-                Create a message here...
+                Hello! Easy Education Himatnagar, 
               </textarea>
               <button className="primary-btn">SEND MESSAGE</button>
             </form>
