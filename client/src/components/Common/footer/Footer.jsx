@@ -149,7 +149,7 @@ const Footer = () => {
             <ul>
               <li>
                 <i className='fa fa-map'></i>
-                19/C Bank scoicty,Mahavirnagar Himatnagar 383001
+                19/C Bank scoicty, Mahavirnagar Himatnagar 383001
               </li>
               <li>
                 <i className='fa fa-phone-alt'></i>
