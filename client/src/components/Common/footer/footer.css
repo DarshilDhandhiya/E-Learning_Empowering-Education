@@ -127,3 +127,45 @@ footer .last i {
   color: inherit; /* or color: black; or any color you prefer */
   text-decoration: none; /* Removes the underline */
 }
+/* Default styles for larger screens */
+.newletter .container {
+  padding-left: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  /* Styles for screens with a maximum width of 768px */
+  .newletter .container {
+    padding-left: 10px; /* Adjust as needed */
+    padding-right: 10px; /* Adjust as needed */
+  }
+
+  .newletter .right,
+  .newletter .left {
+    padding-right: 0; /* Remove padding on smaller screens */
+  }
+
+  .newletter h1 {
+    font-size: 24px; /* Adjust font size for smaller screens */
+  }
+
+  footer .container {
+    grid-template-columns: repeat(1, 1fr); /* Single column layout for smaller screens */
+    grid-gap: 20px; /* Adjust as needed */
+  }
+
+  footer .logo {
+    text-align: center; /* Center-align logo on smaller screens */
+  }
+
+  footer .box {
+    text-align: center; /* Center-align boxes on smaller screens */
+  }
+
+  footer .last ul li {
+    flex-direction: column; /* Stack address info on smaller screens */
+  }
+
+  .legal {
+    padding: 30px 0; /* Adjust padding for smaller screens */
+  }
+}
