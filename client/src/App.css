@@ -148,6 +148,7 @@ p {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
 }
+
 @media screen and (max-width: 768px) {
   .grid2,
   .grid3,
@@ -158,5 +159,8 @@ p {
     background-position: center;
     padding-top: 50%;
     height: 80vh;
+  }
+  #heading h1 {
+    font-size: 36px;
   }
 }
