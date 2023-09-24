@@ -9,9 +9,11 @@
   width: 100%;
   height: 100vh;
   padding-top: 20%;
-  padding-right: 50px;
+  padding-right: 5%; /* Adjust padding for smaller screens */
+
   color: #fff;
 }
+
 .hero #heading h3 {
   color: #fff;
 }
@@ -21,16 +23,32 @@
   margin: 0;
   padding: 0;
 }
+
 @media screen and (max-width: 768px) {
   .margin {
-    height: 40vh;
+    height: 20vh; /* Adjust margin for smaller screens */
   }
+
   .hero {
     background-position: right;
-    padding-top: 50%;
-    height: 80vh;
+    padding-top: 30%; /* Increase padding for smaller screens */
+    height: auto; /* Remove fixed height */
+    min-height: 100vh; /* Set a minimum height for smaller screens */
   }
+  
   .hero .row {
     width: 100%;
+    padding-right: 0; /* Remove right padding for smaller screens */
+  }
+
+  .button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .button button {
+    margin-bottom: 10px;
   }
 }

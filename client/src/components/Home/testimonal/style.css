@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 .testimonal .items {
   padding: 30px;
   transition: 0.5s;
@@ -6,11 +7,13 @@
 .testimonal .img {
   position: relative;
 }
+
 .testimonal img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
 }
+
 .testimonal i {
   position: absolute;
   bottom: 0;
@@ -18,31 +21,94 @@
   background-color: #1eb2a6;
   color: #fff;
 }
+
 .testimonal .name {
   margin: 25px;
 }
+
 .testimonal .name h2 {
   font-size: 20px;
   margin-bottom: 5px;
 }
+
 .testimonal .name span {
   color: #1eb2a6;
 }
+
 .testimonal p {
   margin-top: 20px;
   color: grey;
   transition: 0.5s;
 }
+
 .testimonal .items:hover {
   background-color: #1eb2a6;
   color: #fff;
   cursor: pointer;
 }
+
 .testimonal .items:hover span,
 .testimonal .items:hover p {
   color: #fff;
 }
+
 .testimonal .items:hover i {
   background-color: #fff;
   color: #1eb2a6;
+}
+
+/* Media query for screens between 768px and 1024px */
+@media (max-width: 1024px) {
+  .testimonal .items {
+    padding: 20px; /* Adjust padding for medium-sized screens */
+  }
+  
+  .testimonal .name h2 {
+    font-size: 18px; /* Reduce font size for medium-sized screens */
+  }
+}
+
+/* Media query for screens between 481px and 767px */
+@media (max-width: 767px) {
+  .testimonal .items {
+    padding: 15px; /* Adjust padding for small screens */
+  }
+
+  .testimonal img {
+    width: 80px; /* Reduce image size for small screens */
+    height: 80px;
+  }
+
+  .testimonal .img {
+    text-align: center; /* Center-align the image and quote icon */
+    margin: 0 auto;
+  }
+
+  .testimonal i {
+    left: 0; /* Adjust the position of the quote icon */
+  }
+
+  .testimonal .name {
+    margin: 15px;
+  }
+
+  .testimonal .name h2 {
+    font-size: 16px; /* Reduce font size for small screens */
+  }
+}
+
+/* Media query for screens up to 480px */
+@media (max-width: 480px) {
+  .testimonal .items {
+    padding: 10px; /* Adjust padding for extra small screens */
+  }
+
+  .testimonal img {
+    width: 60px; /* Reduce image size for extra small screens */
+    height: 60px;
+  }
+
+  .testimonal .name h2 {
+    font-size: 14px; /* Reduce font size for extra small screens */
+  }
 }
