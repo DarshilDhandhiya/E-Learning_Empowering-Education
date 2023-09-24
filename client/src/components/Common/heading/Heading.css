@@ -1,0 +1,30 @@
+/* Heading.css */
+.heading-container {
+    text-align: center;
+    padding: 20px; /* Add appropriate padding */
+  }
+  
+  h3 {
+    font-size: 24px; /* Keep your existing font size */
+    margin-bottom: 10px; /* Add some spacing between subtitle and title */
+  }
+  
+  h1 {
+    font-size: 36px; /* Keep your existing font size */
+  }
+  
+  @media (max-width: 768px) {
+    /* Media query for smaller screens (e.g., tablets and phones) */
+    .heading-container {
+      padding: 10px; /* Adjust padding for smaller screens */
+    }
+  
+    h3 {
+      font-size: 24px; /* Keep your existing font size */
+    }
+  
+    h1 {
+      font-size: 36px; /* Keep your existing font size */
+    }
+  }
+  
