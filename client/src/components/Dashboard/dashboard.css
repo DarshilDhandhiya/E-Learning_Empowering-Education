@@ -1,4 +1,5 @@
 .centered-card {
+  padding-bottom: 3%;
     display: flex;
     padding-top: 42%;
     justify-content: center;

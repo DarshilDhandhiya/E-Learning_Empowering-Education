@@ -1,14 +1,35 @@
-Standard1.css
+/* Standard.css */
+
+/* Common styles */
 h1 {
-  padding-top: 60%;
+  padding-top: 20px; /* Add some space above the headings */
+  text-align: center;
 }
 
 .video-card {
-  padding-top: 5%;
-  padding-bottom: 3%;
-  width: 40%;
-  height: 450px; /* Fixed height of 450px */
+  padding-bottom: 4%;
+  width: 100%; /* Adjust width to take full container width */
+  max-width: 500px; /* Limit the maximum width */
   margin: auto;
   border-radius: 5px;
   overflow: hidden;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+  /* Adjust styles for screens up to 768px width */
+  .video-card {
+    max-width: 80%; /* Reduce maximum width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for screens up to 576px width */
+  h1 {
+    font-size: 24px; /* Decrease font size for smaller screens */
+  }
+
+  .video-card {
+    max-width: 90%; /* Further reduce maximum width for smaller screens */
+  }
 }
