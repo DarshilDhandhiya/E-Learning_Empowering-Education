@@ -1,56 +1,65 @@
-import React, { useRef, useState } from "react"
-import Heading from "../Common/heading/Heading"
+// Faq.js
+import React, { useState } from "react";
+import Heading from "../Common/heading/Heading";
+import "./Faq.css";
 
 export const faq = [
   {
-    title: "How to Enroll This Online Courses?",
-    desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title: "How to Enroll in Online Courses?",
+    desc:
+      "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
   {
-    title: "Where It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title: "Where Is It Hidden by Default?",
+    desc:
+      "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
   {
-    title: "How It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title: "How Is It Hidden by Default?",
+    desc:
+      "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
   {
-    title: "How to Enroll This Online Courses?",
-    desc: "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title: "How to Enroll in Online Courses?",
+    desc:
+      "This is the first item's accordion body. It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
   {
-    title: "Where It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title: "Where Is It Hidden by Default?",
+    desc:
+      "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
   {
-    title: "How It is hidden by default, until the collapse?",
-    desc: "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
+    title: "How Is It Hidden by Default?",
+    desc:
+      "It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. It's also worth noting that just about any HTML can go within the .accordion-body, though the transition does limit overflow.",
   },
-]
+];
 
 const Faq = () => {
-  const [click, setClick] = useState(false)
+  const [click, setClick] = useState(null);
 
   const toggle = (index) => {
     if (click === index) {
-      return setClick(null)
+      setClick(null);
+    } else {
+      setClick(index);
     }
-    setClick(index)
-  }
+  };
 
   return (
     <>
-      <Heading subtitle='FAQS' title='Frequesntly Ask Question' />
-      <section className='faq'>
-        <div className='container'>
+      <Heading subtitle="FAQS" title="Frequently Asked Questions" />
+      <section className="faq">
+        <div className="container">
           {faq.map((val, index) => (
-            <div className='box'>
-              <button className='accordion' onClick={() => toggle(index)} key={index}>
+            <div className={`box ${click === index ? "active" : ""}`} key={index}>
+              <button className="accordion" onClick={() => toggle(index)}>
                 <h2>{val.title}</h2>
-                <span>{click === index ? <i className='fa fa-chevron-down'></i> : <i className='fa fa-chevron-right'></i>}</span>
+                <span>{click === index ? <i className="fa fa-chevron-up"></i> : <i className="fa fa-chevron-down"></i>}</span>
               </button>
               {click === index ? (
-                <div className='text'>
+                <div className="text">
                   <p>{val.desc}</p>
                 </div>
               ) : null}
@@ -59,7 +68,7 @@ const Faq = () => {
         </div>
       </section>
     </>
-  )
-}
+  );
+};
 
-export default Faq
+export default Faq;
