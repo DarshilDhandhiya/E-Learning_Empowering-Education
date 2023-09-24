@@ -6,6 +6,7 @@ const Header = () => {
   return (
     <>
       <Head />
+      
         <Nav className='flexSB' >
         <Bars />
           <NavMenu>

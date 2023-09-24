@@ -14,6 +14,8 @@ import Contact from "./components/Contact/Contact"
 import Login from "./components/User/Login"
 import Loginmain from "./components/User/Login/Loginmain"
 import Signupmain from "./components/User/Signup/Signupmain"
+import AdminLogin from './components/Admin/AdminLogin/AdminLogin';
+import AdminHome from './components/Admin/AdminHome';
 import STD1 from "./components/Courses/Standard1/Standard1"
 import STD2 from "./components/Courses/Standard2/Standard2"
 import STD3 from "./components/Courses/Standard3/Standard3"
@@ -76,6 +78,8 @@ function App() {
             <Route path='/login' element={<Login/>} />
             <Route path='/loginmain' element={<Loginmain/>} />
             <Route path='/signupmain' element={<Signupmain/>} />
+            <Route path='/adminlogin' element={<AdminLogin/>} />
+            <Route path='/adminhome' element={<AdminHome/>} />
 
             <Route path='/courses' element={user ? <Courses /> : <Navigate to="/login" />} />
             <Route path='/onlineExam' element={user ? <onlineExam /> : <Navigate to="/login" />} />
