@@ -1,6 +1,6 @@
 import React from 'react'
 import Back from "../Common/back/Back"
-import './dashboard.css'
+import './Dashboard.css'
 
 const Dashboard = (userDetails) => {
   const user = userDetails.user;
