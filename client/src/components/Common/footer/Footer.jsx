@@ -101,19 +101,19 @@ const Footer = () => {
           <div className='box link'>
         <h3>Explore</h3>
         <ul>
-          <li><a className='link-without-color' href="/about">About Us</a></li>
-          <li><a className='link-without-color' href="/services">Services</a></li>
           <li><a className='link-without-color' href="/courses">Courses</a></li>
+          <li><a className='link-without-color' href="/services">Services</a></li>
+          <li><a className='link-without-color' href="/about">About Us</a></li>
           <li><a className='link-without-color' href="/contact">Contact us</a></li>
         </ul>
       </div>
       <div className='box link'>
         <h3>Quick Links</h3>
         <ul>
-          <li><a className='link-without-color' href="/contact">Contact Us</a></li>
-          <li><a className='link-without-color' href="/">Pricing</a></li>
           <li><a className='link-without-color' href="/">Privacy</a></li>
           <li><a className='link-without-color' href="/">Feedbacks</a></li>
+          <li><a className='link-without-color' href="/">Pricing</a></li>
+          <li><a className='link-without-color' href="/contact">Contact Us</a></li>
         </ul>
       </div>
           
