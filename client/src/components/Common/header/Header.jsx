@@ -19,7 +19,7 @@ const Header = () => {
             <NavLink to='/about'>About</NavLink>
             <NavLink to='/contact'>Contact</NavLink>
             <div className='start'>
-              <NavLink to='login'>
+              <NavLink to='loginmain'>
                 <div className='button'>GET START</div>
               </NavLink>
             </div>

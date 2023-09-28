@@ -28,6 +28,8 @@ import STD9 from "./components/Courses/Standard9/Standard9"
 import STD10 from "./components/Courses/Standard10/Standard10"
 import STD11 from "./components/Courses/Standard11/Standard11"
 import STD12 from "./components/Courses/Standard12/Standard12"
+import ProtectedRoute from "./components/User/ProtectedRoute";
+import { UserAuthContextProvider } from "./components/User/context/UserAuthContext";
 
 import axios from "axios";
 import { useEffect, useState } from "react";
@@ -36,27 +38,29 @@ import { useEffect, useState } from "react";
 function App() {
   const [user, setUser] = useState(null);
 
-	const getUser = async () => {
-		try {
-			const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
-			const { data } = await axios.get(url, { withCredentials: true });
-			setUser(data.user._json);
-		} catch (err) {
-			console.log(err);
-		}
-	};
-  console.log(user);
-	useEffect(() => {
-		getUser();
-	}, []);
+	// const getUser = async () => {
+	// 	try {
+	// 		const url = `${process.env.REACT_APP_API_URL}/auth/login/success`;
+	// 		const { data } = await axios.get(url, { withCredentials: true });
+	// 		setUser(data.user._json);
+	// 	} catch (err) {
+	// 		console.log(err);
+	// 	}
+	// };
+  // console.log(user);
+	// useEffect(() => {
+	// 	getUser();
+	// }, []);
 
   return (
     <>
+<UserAuthContextProvider>
       <BrowserRouter>
         <Header />
           <Routes>
             <Route path='/'element={<Home/>} />
-            {/* <Route path='/courses' element={<Courses/>} />
+
+            <Route path='/courses' element={<Courses/>} />
             <Route path='/onlineExam' element={<OnlineExam/>} />
             <Route path='/admission' element={<Admission/>} />
             <Route path='/dashboard' element={<Dashboard/>} />
@@ -72,7 +76,8 @@ function App() {
             <Route path='/std9' element={<STD9/>} />
             <Route path='/std10' element={<STD10/>} />
             <Route path='/std11' element={<STD11/>} />
-            <Route path='/std12' element={<STD12/>} /> */}
+            <Route path='/std12' element={<STD12/>} />
+            
             <Route path='/about' element={<About/>} />
             <Route path='/contact' element={<Contact/>} />
             <Route path='/login' element={<Login/>} />
@@ -81,7 +86,7 @@ function App() {
             <Route path='/adminlogin' element={<AdminLogin/>} />
             <Route path='/adminhome' element={<AdminHome/>} />
 
-            <Route path='/courses' element={user ? <Courses /> : <Navigate to="/login" />} />
+            {/* <Route path='/courses' element={user ? <Courses /> : <Navigate to="/login" />} />
             <Route path='/onlineExam' element={user ? <onlineExam /> : <Navigate to="/login" />} />
             <Route path='/admission' element={user ? <Admission /> : <Navigate to="/login" />} />
             <Route path='/media' element={user ? <Media /> : <Navigate to="/login" />} />
@@ -98,11 +103,12 @@ function App() {
             <Route path='/std11' element={user ? <STD11 /> : <Navigate to="/login" />} />
             <Route path='/std12' element={user ? <STD12 /> : <Navigate to="/login" />} />
             <Route path='/login' element={ <Login />} />
-            <Route path='/dashboard' element={user ? <Dashboard user={user} /> : <Navigate to="/login" />} />
+            <Route path='/dashboard' element={user ? <Dashboard user={user} /> : <Navigate to="/login" />} /> */}
 
           </Routes>
           <Footer/>
       </BrowserRouter>
+      </UserAuthContextProvider>
     </>
   );
 }

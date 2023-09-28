@@ -1,29 +1,32 @@
-.centered-card {
-  padding-bottom: 3%;
-    display: flex;
-    padding-top: 42%;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Make the card fill the entire viewport height */
-  }
-  
-  .DashMain {
-    padding: 20px;
-    text-align: center;
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  }
+/* Home.css */
+.box {
+  padding: 1rem;
+  text-align: center;
+  max-width: 600px; /* Adjust the maximum width as needed for your design */
+  margin: 0 auto; /* Center the box horizontally */
+}
 
-.btn {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 12px 25px;
-    color: white;
-    background-color: #ffc801;
-    border-radius: 12px;
-    margin: 10px 0 0 0;
-    outline: none;
-    border: none;
-    cursor: pointer;
+@media (max-width: 768px) {
+  /* Adjust styles for screens with a maximum width of 768px (tablets and smaller) */
+  .box {
+    max-width: 90%; /* Reduce the maximum width for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  /* Adjust styles for screens with a maximum width of 576px (phones) */
+  .box {
+    padding: 0.5rem; /* Reduce padding for smaller screens */
+  }
+}
+
+/* You can add more media queries and adjust styles as needed for specific screen sizes */
+
+.rounded-image {
+  border-radius: 50%; /* This creates a circular shape */
+  width: 150px; /* Adjust the width as needed */
+  height: 150px; /* Adjust the height as needed */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  margin: 0 auto; /* Center the image horizontally */
+  display: block; /* Ensure the image is a block element */
 }
