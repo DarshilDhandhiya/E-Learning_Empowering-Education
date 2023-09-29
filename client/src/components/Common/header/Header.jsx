@@ -11,6 +11,7 @@ const Header = () => {
         <Bars />
           <NavMenu>
             <NavLink to='/'>Home</NavLink>
+            <NavLink to='/view'>Docs</NavLink>
             <NavLink to='/courses'>Courses</NavLink>
             <NavLink to='/onlineExam'>OnlineExam</NavLink>
             <NavLink to='/admission'>Admission</NavLink>

@@ -1,0 +1,52 @@
+/* View.css */
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 600px;
+    text-align: center;
+  }
+  
+  .card-title {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    font-weight: bold;
+  }
+  
+  .select {
+    padding: 8px;
+    border-radius: 4px;
+  }
+  
+  .card-subtitle {
+    color: #555;
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  
+  .file-preview {
+    margin-top: 10px;
+  }
+  
+  .file-name {
+    font-weight: bold;
+  }
+  
+  .view-file-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  

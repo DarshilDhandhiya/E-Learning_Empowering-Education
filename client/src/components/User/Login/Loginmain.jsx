@@ -87,7 +87,7 @@ const Loginmain = () => {
   return (
     <>
       <Back title='User Login' />
-    <Container className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
+    <Container className="d-flex justify-content-center align-items-center" style={{ height: "60vh", justifyContent: "center"}}>
       <Card className="p-4">
         <Card.Body>
           
@@ -120,7 +120,7 @@ const Loginmain = () => {
       </Card><br/>
 
       <div className="p-4 mt-3 text-center">
-        Don't have an account? <Link to="/signup">Sign up</Link>
+        Don't have an account? <Link to="/signupmain">Sign up</Link>
       </div>
     </Container>
     </>

@@ -28,6 +28,7 @@ import STD9 from "./components/Courses/Standard9/Standard9"
 import STD10 from "./components/Courses/Standard10/Standard10"
 import STD11 from "./components/Courses/Standard11/Standard11"
 import STD12 from "./components/Courses/Standard12/Standard12"
+import View from './view';
 import ProtectedRoute from "./components/User/ProtectedRoute";
 import { UserAuthContextProvider } from "./components/User/context/UserAuthContext";
 
@@ -59,7 +60,7 @@ function App() {
         <Header />
           <Routes>
             <Route path='/'element={<Home/>} />
-
+            <Route path='/view' element={<View/>} />
             <Route path='/courses' element={<Courses/>} />
             <Route path='/onlineExam' element={<OnlineExam/>} />
             <Route path='/admission' element={<Admission/>} />
