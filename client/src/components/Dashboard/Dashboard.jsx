@@ -37,7 +37,7 @@ const Dashboard = () => {
   const handleLogout = async () => {
     try {
       await logOut();
-      navigate("Login");
+      navigate("/");
     } catch (error) {
       console.log(error.message);
     }

@@ -3,7 +3,7 @@ import Back from '../../Common/back/Back';
 import '../Standard.css' // Import the CSS file for styling
 
 const videoLinks = {
-  Maths: [
+  Standard3: [
     'https://www.youtube.com/embed/k6kpgObkmfk',
   ],
 };
@@ -11,7 +11,7 @@ const videoLinks = {
 const Standard3 = () => {
   return (
     <div>
-      <Back title='Standard1' />
+      <Back title='Standard3' />
 
       {/* Render video links by category */}
       {Object.entries(videoLinks).map(([category, links]) => (

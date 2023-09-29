@@ -3,7 +3,7 @@ import Back from '../../Common/back/Back';
 import '../Standard.css' // Import the CSS file for styling
 
 const videoLinks = {
-  Maths: [
+  Standard1: [
     'https://www.youtube.com/embed/k6kpgObkmfk',
   ],
 };
