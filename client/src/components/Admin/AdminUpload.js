@@ -1,7 +1,7 @@
 // App.js
 // import "./App.css";
 import { useState, useEffect } from "react";
-import './AdminUpload.css'
+// import './AdminUpload.css'
 
 import {
   ref,

@@ -53,8 +53,8 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { Form, Alert, Card, Container, Button } from "react-bootstrap";
 import { useUserAuth } from "../context/UserAuthContext";
-import Back from "../../Common/back/Back"
-import './styles.module.css';
+import Back from "../../Common/back/Back";
+import styles from './styles.module.css'; // Import the CSS styles
 
 const Signupmain = () => {
   const [email, setEmail] = useState("");
@@ -78,25 +78,25 @@ const Signupmain = () => {
     <>
       <Back title='User Signup' />
     
-    <Container className="d-flex justify-content-center align-items-center" style={{ height: "100vh" }}>
-      <Card className="p-4">
+    <Container className={`d-flex justify-content-center align-items-center ${styles.centerContainer}`}>
+      <Card className={styles.container}>
         <Card.Body>
 
-          <h2 className="mb-3 text-center">Sign Up</h2>
+          <h2 className={styles.heading}>Create Account</h2>
           {error && <Alert variant="danger">{error}</Alert>}<br/>
           
           <Form onSubmit={handleSubmit}>
 
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Email address" onChange={(e) => setEmail(e.target.value)} />
+              <Form.Control type="email" placeholder="Email address" onChange={(e) => setEmail(e.target.value)} className={styles.input} />
             </Form.Group>
 
             <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
+              <Form.Control type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} className={styles.input} />
             </Form.Group>
 
             <div className="d-grid gap-2">
-              <Button variant="primary" type="Submit">Sign Up</Button>
+              <Button variant="primary" type="Submit" className={styles.btn}>Sign Up</Button>
             </div>
 
           </Form>
@@ -104,7 +104,7 @@ const Signupmain = () => {
         </Card.Body>
       </Card>
       <br/>
-      <div className="text-center">
+      <div className={styles.text}>
             Already have an account? <Link to="/Loginmain">Log In</Link>
       </div>
     </Container>

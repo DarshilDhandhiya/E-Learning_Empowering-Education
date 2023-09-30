@@ -1,6 +1,7 @@
 import axios from "axios";
 import { React, useEffect, useState } from "react";
 import "./AdminLogin.css"
+import Back from '../../Common/back/Back';
 import BaseAddress from './BaseAddress';
 import { useCookies } from "react-cookie";
 
@@ -46,7 +47,8 @@ function AdminLogin() {
     }
 
     return (
-        
+        <>
+            <Back title='Admin Login' />
             <div className="container">
                 <div className="row mt-5">
                     <div className="col-6 offset-3">
@@ -71,7 +73,7 @@ function AdminLogin() {
                     </div>
                 </div>
             </div>
-        
+        </>
     );
 }
 export default AdminLogin;
