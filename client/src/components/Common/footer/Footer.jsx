@@ -25,7 +25,7 @@ export const blog = [
     type: "user",
     date: "MAY. 15, 2022",
     com: "10 COMMENTS ",
-    title: "Build your Dream Software & Engineering Career",
+    title: "Build your Dream in Software Engineer",
     desc: "A small river named Duden flows by their place and supplies it with the necessary regelialia.",
     cover: "../images/blog/b3.webp",
   },
